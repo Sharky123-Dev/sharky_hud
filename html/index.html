@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sharky Hud</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Primary Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Color Picker Theme -->
+    <link rel="stylesheet" href="css/bootstrap-colorpicker.css">
+    <!-- Animated Css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <!-- Bootstrap Switch Button-->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <!-- Noty CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="caja left-top">
+        <div class="water mt-1">
+            <div class="icon">
+                <i class="fas fa-tint"></i>
+            </div>
+            <div class="progress">
+                <div class="progress-bar color1" id="progress1" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="burger mt-1">
+            <div class="icon">
+                <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="progress">
+                <div class="progress-bar color2" role="progressbar" id="progress2" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="vida mt-1">
+            <div class="icon">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <div class="progress">
+                <div class="progress-bar color3" role="progressbar" id="progress3" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="escudo mt-1">
+            <div class="icon">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="progress">
+                <div class="progress-bar color4" role="progressbar" id="progress4" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_config" tabindex="-1" role="dialog" aria-labelledby="config" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary">
+                    <h5 class="modal-title text-white" id="config">Configuración Hud</h5>
+                    <button type="button" id="close" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-secondary text-white">
+                    <h1 class="display-4 text-white text-center">Configuración</h1>
+                    <h2 class="fontTitle text-white text-center mt-3">Colores</h2>
+                    <h3 class="mr-4 font">Agua</h3>
+                    <div id="cp1" class="input-group" title="Using input value">
+                        <input type="text" class="form-control input-lg" value="#007BFF" />
+                        <span class="input-group-append">
+                            <span class="input-group-text colorpicker-input-addon"><i></i></span>
+                        </span>
+                    </div>
+
+                    <h3 class="mr-4 font mt-3">Comida</h3>
+                    <div id="cp2" class="input-group" title="Using input value">
+                        <input type="text" class="form-control input-lg" value="#FFC107" />
+                        <span class="input-group-append">
+                            <span class="input-group-text colorpicker-input-addon"><i></i></span>
+                        </span>
+                    </div>
+
+                    <h3 class="mr-4 font mt-3">Vida</h3>
+                    <div id="cp3" class="input-group" title="Using input value">
+                        <input type="text" class="form-control input-lg" value="#28A745" />
+                        <span class="input-group-append">
+                            <span class="input-group-text colorpicker-input-addon"><i></i></span>
+                        </span>
+                    </div>
+
+                    <h3 class="mr-4 font mt-3">Blindaje</h3>
+                    <div id="cp4" class="input-group" title="Using input value">
+                        <input type="text" class="form-control input-lg" value="#17A2B8" />
+                        <span class="input-group-append">
+                            <span class="input-group-text colorpicker-input-addon"><i></i></span>
+                        </span>
+                    </div>
+
+                    <h3 class="mr-4 font mt-3">Emoticonos</h3>
+                    <div id="cp5" class="input-group" title="Using input value">
+                        <input type="text" class="form-control input-lg" value="#fff" />
+                        <span class="input-group-append">
+                            <span class="input-group-text colorpicker-input-addon"><i></i></span>
+                        </span>
+                    </div>
+
+                    <div class="row d-flex justify-content-center mt-4">
+                        <input type="checkbox" data-toggle="toggle" id="draggable" data-on="Moviendo Hud Activado"
+                            data-off="Moviendo Hud Desactivado" data-onstyle="success" data-offstyle="danger">
+                        <small class="form-text text-white text-center">Tienes que salir de este menu para moverlo,
+                            luego entras nuevamente y lo desactivas, prueba con el comando /moverhud</small>
+                        <div class="form-check">
+                            <input id="up" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Mover Hud (Posiciones predeterminadas)
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer bg-secondary">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="close">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-down" id="containercircle">
+    </div>    
+
+    <div class="logo_arriba">
+        <img src="img/text.png" alt="Logo">
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Progressbar Js -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Noty -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <!-- Bootsrap Switches -->
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <!-- Color Picker -->
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <!-- Configs -->
+    <script src="../configs/config_ui.js"></script>
+    <!-- Main Script -->
+    <script src="js/app.js"></script>
+    <!-- Noty Script -->
+    <script src="js/noty.js"></script>
+</body>
+</html>
