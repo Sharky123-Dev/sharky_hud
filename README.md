@@ -1,5 +1,4 @@
 # SHARKY_HUD
-## A FIVEM HUD
 
 [![Build Status](https://img.shields.io/github/downloads/Sharky123-Dev/sharky_hud/total?label=downloads&style=for-the-badge)](https://github.com/Sharky123-Dev/sharky_hud/)
 
@@ -10,11 +9,6 @@ One of the first customizable huds so you can leave it to your liking!
 - You can move the hud around the screen with a single command "moverhud"
 - Change the colors your way.
 - Take the map off the screen to improve the role and it is only displayed in the car.
-
-
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
 
 ## Libraries
 
@@ -32,7 +26,7 @@ The libraries used in this project are:
 
 ## Installation
 
-This script doesn´t have any dependencies.
+This script need ESX legacy for work with hunger and thirst (https://github.com/esx-framework/es_extended/tree/legacy)
 
 First, download the file via GitHub or GitBash.
 
@@ -43,7 +37,7 @@ git clone https://github.com/Sharky123-Dev/sharky_hud
 Then put the file in your resources folder and start it in the cfg file.
 
 ```cfg
-start sharky_hud
+ensure sharky_hud
 ```
 Remember, do not rename it for the script to work properly.
 
