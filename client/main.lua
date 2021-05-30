@@ -17,8 +17,8 @@ CreateThread(function()
         SendNUIMessage({
             action = 'change',
             isVeh2 = false,
-            vida = GetEntityHealth(GetPlayerPed(-1)) - 100,
-            blindaje = GetPedArmour(GetPlayerPed(-1)),
+            vida = GetEntityHealth(player) - 100,
+            blindaje = GetPedArmour(player),
             comida = comida,
             agua = bebida  
         })
