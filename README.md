@@ -20,13 +20,13 @@ watch the results in the right.
 
 The libraries used in this project are:
 
-- [Bootstrap v4.3.1]() - Css Library for HTML5.
+- [Bootstrap v4.3.1](https://getbootstrap.com/docs/4.3/getting-started) - Css Library for HTML5.
 - [Bootstrap-Colorpicker](https://github.com/itsjavi/bootstrap-colorpicker) - A color picker library for js.
 - [Animate CSS](https://animate.style/) - A css library for animate things into HTML5.
 - [NotyJS](https://ned.im/noty/#/) - A notfication library for HTML and JS.
 - [FontAwesome](https://fontawesome.com/) - An icon library.
 - [Bootstrap Toggle](https://gitbrent.github.io/bootstrap4-toggle/) - A switch button library for bootstrap.
-- [jQuery] - A js library.
+- [jQuery](https://jquery.com/) - A js library.
 - [Popper.js](https://popper.js.org/) - A js library.
 - [Bootstrap.js](https://getbootstrap.com/docs/4.3/getting-started/javascript/) - A js library.
 
