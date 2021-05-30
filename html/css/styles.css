@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,200&display=swap');
+
+body {
+    background: none !important;
+}
+
+.left-top {
+    position: absolute;
+    width: 80px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.logo_arriba {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.logo_arriba img {
+    height: 150px
+}
+
+#modal-container {
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.caja {
+    /* position: relative; */
+}
+
+.modal-backdrop {
+    background-color: none !important;
+}
+
+.escudo {
+    display: none;
+}
+
+.icon {
+    text-align: center;
+    font-size: 20px
+}
+
+.font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.fontTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.center-down {
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 45%;
+    width: 200px;
+}
