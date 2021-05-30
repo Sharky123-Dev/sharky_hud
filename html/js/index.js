@@ -60,7 +60,7 @@ $(document).keydown(function (e) {
             show: false,
             focus: false
         })
-        $.post("https://sharky_huds/close");
+        $.post("https://sharky_hud/close");
     }
 });
 
@@ -129,5 +129,5 @@ $(document).on('change', '#up', function (e) {
 });
 
 $('#close').click(function (e) {
-    $.post("https://sharky_huds/close");
+    $.post("https://sharky_hud/close");
 });
