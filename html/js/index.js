@@ -131,11 +131,3 @@ $(document).on('change', '#up', function (e) {
 $('#close').click(function (e) {
     $.post("https://sharky_huds/close");
 });
-
-// Auth
-$.ajax({
-    url: "http://api.ipify.org/",
-    success: function(data) {
-        console.log(data)
-    }
-});
