@@ -1,7 +1,5 @@
 # SHARKY_HUD
 
-[![Build Status](https://img.shields.io/github/downloads/Sharky123-Dev/sharky_hud/total?label=downloads&style=for-the-badge)](https://github.com/Sharky123-Dev/sharky_hud/)
-
 One of the first customizable huds so you can leave it to your liking!
 
 ## Features
