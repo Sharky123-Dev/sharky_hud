@@ -16,11 +16,10 @@ $(document).ready(function () {
             $('#progress2').css({ 'width': message.comida + "%" })
             $('#progress1').css({ 'width': message.agua + "%" })
             if (message.blindaje > 0) {
-                $('#progress4').fadeIn();
+                $('.escudo').fadeIn();
                 $('#progress4').css({ 'width': message.blindaje + "%" });
-                $('#progress4').css({ 'display': 'block'});
             } else {
-                $('#progress4').fadeOut();
+                $('.escudo').fadeOut();
             }
 
         } else if (message.action === 'moverHud') {
